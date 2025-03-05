@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="123.png">
+    <title>Simple Arbitrage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simple Arbitrage Calculator</h1>
+    <button onclick="toggleLightMode()">Toggle Light Mode</button>
+    <div class="container">
+        <div class="calculator">
+            <h2>Arbitrage Calculator (2 Results)</h2>
+            <input type="number" id="amount2" placeholder="Total Amount" oninput="calculateArbitrage2()">
+            <input type="number" id="oddA" placeholder="Odds for Team 1" oninput="calculateArbitrage2()">
+            <input type="number" id="oddB" placeholder="Odds for Team 2" oninput="calculateArbitrage2()">
+            <h3 id="result2"></h3>
+            <h3 id="profit2"></h3>
+        </div>
+        <div class="calculator">
+            <h2>Arbitrage Calculator (3 Results)</h2>
+            <input type="number" id="amount3" placeholder="Total Amount" oninput="calculateArbitrage3()">
+            <input type="number" id="odd1" placeholder="Odds from Team 1" oninput="calculateArbitrage3()">
+            <input type="number" id="odd2" placeholder="Odds for Draw" oninput="calculateArbitrage3()">
+            <input type="number" id="odd3" placeholder="Odds from Team 2" oninput="calculateArbitrage3()">
+            <h3 id="result3"></h3>
+            <h3 id="profit3"></h3>
+        </div>
+    </div>
+    <footer><h6>Made by <a href="https://www.instagram.com/dhiraj_281/#" target="_blank" class="insta_ref">@Dhiraj</a></h6></footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
